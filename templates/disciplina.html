@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{disciplina}}</title>
+</head>
+<body>
+    <table border="1">
+            <tr>
+                <td>Project</td>
+                <td>data de inicio</td>
+                <td>data final</td>
+            </tr>
+
+            {% for det in detalhe %}
+                <tr>
+                    <td>{{det[0]}}</td>
+                    <td>{{det[1]}}</td>
+                    <td>{{det[2]}}</td>
+                </tr>
+        {% endfor %}
+
+        </table>
+</body>
+</html>
